@@ -1,0 +1,31 @@
+curl -X GET \
+  https://060e13dae3154925a04428f43704f81c.eu-west-1.aws.found.io:9243/products_prod_de_v11/_search \
+  -H 'Content-Type: application/json' \
+  -d '{
+      "query": {
+        "bool": {
+          "filter": {
+            "term": {
+              "categoryIds": "5ee8bcb98677256ed9b59f0d"
+            }
+          }
+        }
+      }
+    }
+'
+
+curl GET \
+  https://060e13dae3154925a04428f43704f81c.eu-west-1.aws.found.io:9243/products_prod_de_v11/_search \
+  -H 'Content-Type: application/json' \
+  -d '{
+      "query": {
+        "bool": {
+          "filter": {
+            "term": {
+              "categoryIds": "5ee8bcb98677256ed9b59f0d"
+            }
+          }
+        }
+      }
+    }
+'
